@@ -249,8 +249,8 @@ if __name__ == '__main__':
     rewards = []
     # run the experiment n times -> this is the call to the CEM methof
     [rewards.append(experiment(params)) for i in range(num_run)]
-    try:
-        print("Rewards Shape:", len(rewards))
+    
+    print("Rewards Shape:", len(rewards))
     # TODO: implement plotting of the mean rewards for Task 4.2 f
     # Task 2.4.f
     fig, ax = plt.subplots()
